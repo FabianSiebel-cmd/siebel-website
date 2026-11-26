@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Siebel Veranstaltungstechnik — Ton · Licht · Nebel · DJ · Lüdenscheid</title>
+<meta name="description" content="Siebel Veranstaltungstechnik aus Lüdenscheid. Ton-, Licht-, Nebel- und DJ-Technik für Clubs, Open-Airs, Firmen- und Privatveranstaltungen." />
+<!-- Google Search Console: Bestätigung (darf bleiben) -->
+<meta name="google-site-verification" content="dBKnYPi1uND3IdNQynbjSlcGjutWM8mQw4hy3yKD83Y" />
+<!-- Eine einzige offizielle Adresse für Google -->
+<link rel="canonical" href="https://siebelveranstaltungstechnik.de/" />
+
+<!-- Vorschau beim Teilen (WhatsApp, Facebook, Instagram-Bio-Link) -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="de_DE" />
+<meta property="og:site_name" content="Siebel Veranstaltungstechnik" />
+<meta property="og:title" content="Siebel Veranstaltungstechnik — Ton · Licht · Nebel · DJ · Lüdenscheid" />
+<meta property="og:description" content="Ton-, Licht-, Nebel- und DJ-Technik aus Lüdenscheid – für Clubs, Open-Airs, Firmen- und Privatveranstaltungen im Sauerland und Ruhrgebiet." />
+<meta property="og:url" content="https://siebelveranstaltungstechnik.de/" />
+<!-- Bild 1200 × 630 px als "og-bild.jpg" ins Hauptverzeichnis hochladen.
+     Solange es fehlt, diese Zeile weglassen. -->
+<meta property="og:image" content="https://siebelveranstaltungstechnik.de/og-bild.jpg" />
+
+<!-- Firmendaten für Google (lokale Suche, Maps, Knowledge Panel) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://siebelveranstaltungstechnik.de/#firma",
+  "name": "Siebel Veranstaltungstechnik",
+  "description": "Veranstaltungstechnik aus Lüdenscheid: Tontechnik, Lichttechnik, Nebeltechnik und DJ-Service für Konzerte, Clubs, Open-Airs, Firmen- und Privatveranstaltungen – inklusive Aufbau, Betrieb und Abbau.",
+  "url": "https://siebelveranstaltungstechnik.de/",
+  "telephone": "+49 151 70532281",
+  "email": "Siebel.veranstaltungstechnik@gmx.de",
+  "founder": {
+    "@type": "Person",
+    "name": "Fabian Siebel"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Altenastraße 23",
+    "postalCode": "58507",
+    "addressLocality": "Lüdenscheid",
+    "addressRegion": "Nordrhein-Westfalen",
+    "addressCountry": "DE"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Lüdenscheid" },
+    { "@type": "AdministrativeArea", "name": "Märkischer Kreis" },
+    { "@type": "AdministrativeArea", "name": "Sauerland" },
+    { "@type": "AdministrativeArea", "name": "Ruhrgebiet" }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "20:00"
+    }
+  ],
+  "knowsAbout": ["Tontechnik", "Lichttechnik", "Nebeltechnik", "DJ-Service", "Bühnenbau", "Open-Air-Veranstaltungen"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Leistungen",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tontechnik", "description": "PA-Systeme, Mischpulte, Funkstrecken und Monitoring – kalibriert auf den Veranstaltungsraum." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lichttechnik", "description": "Moving-Heads, LED-Bars und Architekturlicht – von Akzentbeleuchtung bis zur Lightshow." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Nebeltechnik", "description": "Hazer, Bodennebel und CO₂-Effekte." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "DJ-Service", "description": "DJs aus dem Sauerland – vom Hochzeits-DJ bis zum Clubset." } }
+    ]
+  }
+}
+</script>
+<link rel="icon" href="bilder/logo.png" />
+<style>
+  :root{
+    --bg:#0a1016;
+    --bg-soft:#0e151d;
+    --fg:#eef4f2;
+    --muted:#8c9ba3;
+    --line:rgba(165,206,200,.12);
+    --accent:#a3e6c2;
+    --accent-dim:rgba(165,231,194,.18);
+    --petrol:#4e6b86;
+    --petrol-soft:#6c8aa3;
+    --petrol-deep:#243743;
+    --maxw:1240px;
+    --pad:clamp(20px,4vw,48px);
+    --display:-apple-system,BlinkMacSystemFont,"Inter","Helvetica Neue","Segoe UI",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--fg);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter","Helvetica Neue",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  ::selection{background:var(--accent);color:#0b0d0c}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+
+  /* ───────────── Top Nav ───────────── */
+  .nav{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px var(--pad);
+    transition:background .35s ease, backdrop-filter .35s ease, padding .35s ease, border-color .35s ease;
+    border-bottom:1px solid transparent;
+  }
+  .nav.scrolled{
+    background:rgba(10,12,15,.5);
+    -webkit-backdrop-filter:saturate(1.6) blur(22px);backdrop-filter:saturate(1.6) blur(22px);
+    border-bottom-color:var(--line);padding-top:14px;padding-bottom:14px;
+  }
+  .nav .brand{display:flex;align-items:center;gap:13px;min-width:0}
+  .nav .brand .mark{width:38px;height:38px;flex:0 0 auto;border-radius:9px;object-fit:cover;box-shadow:0 3px 14px rgba(0,0,0,.45)}
+  .nav .brand .wm{display:flex;align-items:baseline;gap:9px;white-space:nowrap;line-height:1}
+  .nav .brand .wm strong{font-weight:700;font-size:16px;letter-spacing:.03em;color:var(--fg)}
+  .nav .brand .wm span{font-weight:500;font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+  .nav .links{display:flex;align-items:center;gap:32px}
+  .nav .links a{font-size:13px;letter-spacing:.02em;color:var(--muted);transition:color .2s ease;position:relative}
+  .nav .links a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:1px;background:var(--accent);transition:right .3s ease}
+  .nav .links a:hover{color:var(--fg)}
+  .nav .links a:hover::after{right:0}
+  @media (max-width:860px){ .nav .links{display:none} .nav .brand .wm span{display:none} }
+
+  /* ───────────── Hero ───────────── */
+  .hero{
+    position:relative;min-height:100vh;
+    display:flex;align-items:flex-end;
+    padding:160px var(--pad) 80px;
+    overflow:hidden;isolation:isolate;
+  }
+  .hero video, .hero .hero-fallback{
+    position:absolute;inset:0;width:100%;height:100%;
+    object-fit:cover;z-index:-2;
+    filter:blur(14px) saturate(.95) brightness(.55);
+    transform:scale(1.12); /* hide blur edges */
+  }
+  .hero .hero-fallback{background:#0b1219 center/cover no-repeat;background-image:url('bilder/hero.jpg')}
+  .hero::before{
+    content:"";position:absolute;inset:0;z-index:-1;
+    background:
+      radial-gradient(130% 80% at 82% 0%,rgba(165,231,194,.12),transparent 55%),
+      radial-gradient(120% 90% at 8% 102%,rgba(78,107,134,.30),transparent 60%),
+      linear-gradient(180deg,rgba(8,13,18,.55) 0%,rgba(8,13,18,.28) 40%,rgba(8,13,18,.86) 100%);
+  }
+  .hero .inner{max-width:var(--maxw);margin:0 auto;width:100%}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:10px;
+    font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);
+    margin-bottom:24px;font-weight:500;
+  }
+  .eyebrow::before{content:"";width:24px;height:1px;background:var(--accent)}
+  .hero h1{
+    font-family:var(--display);
+    font-weight:800;
+    font-size:clamp(40px,7.4vw,94px);
+    line-height:1.0;letter-spacing:-.035em;margin:0 0 26px;
+  }
+  .hero h1 em{font-style:normal;color:var(--accent)}
+  .hero p.kicker{
+    max-width:620px;color:#d7dcde;font-size:clamp(15px,1.5vw,18px);
+    margin:0 0 40px;line-height:1.55;
+  }
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:14px 24px;border-radius:999px;
+    font-family:inherit;font-size:14px;letter-spacing:.04em;font-weight:500;
+    cursor:pointer;
+    transition:transform .2s ease,background .2s ease,border-color .2s ease,color .2s ease;
+  }
+  .btn-primary{background:var(--accent);color:#0b0d0c;border:1px solid var(--accent)}
+  .btn-primary:hover{transform:translateY(-1px);background:#cdf2e0}
+  .btn-ghost{border:1px solid var(--line);color:var(--fg)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .btn svg{width:16px;height:16px}
+  .scroll-hint{
+    position:absolute;bottom:28px;left:50%;transform:translateX(-50%);
+    font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);
+    display:flex;align-items:center;gap:10px;
+  }
+  .scroll-hint::after{content:"";width:1px;height:32px;background:linear-gradient(180deg,var(--muted),transparent);animation:drop 1.8s ease-in-out infinite}
+  @keyframes drop{0%{transform:scaleY(.2);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(.2);transform-origin:bottom}}
+
+  /* ───────────── Section base ───────────── */
+  section{padding:clamp(90px,12vw,160px) var(--pad);position:relative}
+  .container{max-width:var(--maxw);margin:0 auto}
+  .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin-bottom:64px;flex-wrap:wrap}
+  .section-head h2{
+    font-family:var(--display);font-weight:700;
+    font-size:clamp(30px,4.2vw,50px);letter-spacing:-.03em;margin:0;line-height:1.04;max-width:760px;
+  }
+  .section-head h2 em{font-style:normal;color:var(--accent)}
+  .section-head .label{
+    font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);
+    display:flex;align-items:center;gap:12px;white-space:nowrap;
+  }
+  .section-head .label::before{content:"";width:24px;height:1px;background:var(--accent)}
+
+  /* ───────────── Marquee ───────────── */
+  .marquee{
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    padding:22px 0;overflow:hidden;white-space:nowrap;background:var(--bg-soft);
+  }
+  .marquee-track{display:inline-flex;gap:44px;animation:scroll-x 42s linear infinite;font-size:13px;letter-spacing:.24em;text-transform:uppercase;font-weight:500;color:var(--muted)}
+  .marquee-track span{display:inline-flex;align-items:center;gap:44px}
+  .marquee-track span::after{content:"✦";color:var(--accent);font-size:9px}
+  @keyframes scroll-x{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ───────────── About ───────────── */
+  .about{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:start}
+  .about .lead{
+    font-family:var(--display);font-weight:600;
+    font-size:clamp(21px,2.6vw,30px);line-height:1.3;color:var(--fg);margin:0 0 24px;letter-spacing:-.02em;
+  }
+  .about p{color:#bfc6c9;margin:0 0 18px;font-size:16px;line-height:1.7;max-width:520px}
+  .about-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:48px}
+  .stat{border-top:1px solid var(--line);padding:18px 0 0}
+  .stat .n{font-family:var(--display);font-size:42px;font-weight:700;line-height:1;color:var(--accent);letter-spacing:-.02em}
+  .stat .l{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+  @media (max-width:900px){.about{grid-template-columns:1fr;gap:48px}}
+
+  /* ───────────── Services ───────────── */
+  .services{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .service{
+    background:var(--bg);padding:40px 32px;min-height:340px;
+    display:flex;flex-direction:column;justify-content:space-between;gap:28px;
+    transition:background .35s ease;position:relative;overflow:hidden;
+  }
+  .service:hover{background:#0b1219}
+  .service .ico{
+    width:48px;height:48px;border-radius:50%;border:1px solid var(--accent);
+    display:grid;place-items:center;color:var(--accent);
+    transition:background .3s ease,transform .3s ease;
+  }
+  .service:hover .ico{background:var(--accent-dim);transform:rotate(-8deg)}
+  .service .ico svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.5}
+  .service h3{font-family:var(--display);font-weight:700;font-size:23px;margin:0 0 10px;letter-spacing:-.02em}
+  .service p{color:var(--muted);font-size:14.5px;line-height:1.6;margin:0}
+  .service .num{position:absolute;top:24px;right:24px;font-size:11px;color:var(--muted);letter-spacing:.2em}
+  @media (max-width:1000px){.services{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:560px){.services{grid-template-columns:1fr}}
+
+  /* ───────────── Gallery / Mosaic ───────────── */
+  .mosaic{
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    grid-auto-rows:140px;
+    gap:14px;
+  }
+  .mosaic figure{margin:0;overflow:hidden;border-radius:2px;position:relative;background:#0b1219}
+  .mosaic figure img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.6,.2,1),filter .6s ease;filter:brightness(.92) saturate(1.05)}
+  .mosaic figure:hover img{transform:scale(1.04);filter:brightness(1.05) saturate(1.1)}
+  .mosaic figure::after{
+    content:attr(data-cap);position:absolute;left:18px;bottom:14px;
+    font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--fg);
+    opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease;
+    text-shadow:0 1px 8px rgba(0,0,0,.7);
+  }
+  .mosaic figure:hover::after{opacity:1;transform:translateY(0)}
+  .m1{grid-column:span 7;grid-row:span 3}
+  .m2{grid-column:span 5;grid-row:span 3}
+  .m3{grid-column:span 4;grid-row:span 2}
+  .m4{grid-column:span 4;grid-row:span 2}
+  .m5{grid-column:span 4;grid-row:span 2}
+  @media (max-width:900px){
+    .mosaic{grid-auto-rows:110px}
+    .m1,.m2,.m3,.m4,.m5{grid-column:span 12;grid-row:span 2}
+  }
+
+  /* ───────────── Image breaks (Parallax) ───────────── */
+  .break{
+    position:relative;min-height:64vh;
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    padding:120px var(--pad);overflow:hidden;isolation:isolate;
+    background-color:#0b1219;background-size:cover;background-position:center;
+    background-attachment:fixed;
+  }
+  .break::before{
+    content:"";position:absolute;inset:0;z-index:-1;
+    background:
+      radial-gradient(120% 120% at 50% 40%,rgba(8,13,18,.30),rgba(8,13,18,.78)),
+      linear-gradient(180deg,rgba(8,13,18,.72),rgba(8,13,18,.42) 45%,rgba(8,13,18,.86));
+  }
+  .break .break-inner{position:relative;max-width:800px}
+  .break .eyebrow{justify-content:center}
+  .break .eyebrow::after{content:"";width:24px;height:1px;background:var(--accent)}
+  .break h3{
+    font-family:var(--display);font-weight:700;
+    font-size:clamp(26px,4.2vw,48px);line-height:1.1;letter-spacing:-.03em;
+    margin:0;color:var(--fg);text-shadow:0 2px 40px rgba(0,0,0,.55);
+  }
+  .break h3 em{font-style:normal;color:var(--accent)}
+  .break-1{background-image:url('bilder/einsatz-1.jpg')}
+  .break-2{background-image:url('bilder/einsatz-2.jpg')}
+  .break-3{background-image:url('bilder/einsatz-3.jpg')}
+  .break-4{background-image:url('bilder/einsatz-4.jpg')}
+  @media (max-width:900px){
+    .break{background-attachment:scroll;min-height:52vh}
+  }
+
+  /* ───────────── Process ───────────── */
+  .process{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;counter-reset:step}
+  .step{counter-increment:step;border-top:1px solid var(--line);padding-top:24px}
+  .step::before{
+    content:"0" counter(step);display:block;font-family:var(--display);font-size:28px;font-weight:700;color:var(--accent);
+    letter-spacing:-.02em;margin-bottom:14px;line-height:1;
+  }
+  .step h4{font-size:15px;font-weight:600;letter-spacing:.04em;margin:0 0 8px;color:var(--fg)}
+  .step p{color:var(--muted);font-size:14px;margin:0;line-height:1.6}
+  @media (max-width:800px){.process{grid-template-columns:repeat(2,1fr)}}
+
+  /* ───────────── CTA / Contact ───────────── */
+  .contact{position:relative;overflow:hidden;isolation:isolate;background:#0b1219}
+  .contact::before{
+    content:"";position:absolute;inset:0;z-index:-2;
+    background:url('bilder/kontakt.jpg') center/cover no-repeat;
+    filter:blur(26px) brightness(.6) saturate(.95);transform:scale(1.18);
+  }
+  .contact::after{
+    content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+    background:
+      radial-gradient(70% 90% at 100% 0%,rgba(165,231,194,.12),transparent 60%),
+      linear-gradient(180deg,rgba(8,13,18,.66),rgba(8,13,18,.84));
+  }
+  .contact .brand-mark{height:62px;width:auto;border-radius:13px;margin-bottom:26px;box-shadow:0 12px 34px rgba(0,0,0,.45)}
+  .contact .container{position:relative;display:grid;grid-template-columns:1.3fr 1fr;gap:64px;align-items:end}
+  .contact h2{font-family:var(--display);font-weight:800;font-size:clamp(38px,6vw,76px);line-height:1.0;margin:0 0 24px;letter-spacing:-.035em}
+  .contact h2 em{font-style:normal;color:var(--accent)}
+  .contact .sub{color:#bfc6c9;font-size:17px;max-width:520px;margin:0 0 40px}
+  .contact-card{
+    border:1px solid var(--line);border-radius:14px;padding:36px;
+    background:rgba(255,255,255,.025);
+    -webkit-backdrop-filter:saturate(1.4) blur(16px);backdrop-filter:saturate(1.4) blur(16px);
+    box-shadow:0 20px 60px rgba(0,0,0,.3);
+  }
+  .contact-row{display:flex;align-items:flex-start;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+  .contact-row:last-child{border-bottom:none}
+  .contact-row .ico{
+    flex:0 0 38px;height:38px;border-radius:50%;border:1px solid var(--accent);
+    display:grid;place-items:center;color:var(--accent);
+  }
+  .contact-row .ico svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6}
+  .contact-row .l{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+  .contact-row .v{font-size:18px;color:var(--fg);font-weight:500;letter-spacing:.005em;line-height:1.35}
+  .contact-row a.v{transition:color .2s ease}
+  .contact-row a.v:hover{color:var(--accent)}
+  @media (max-width:900px){.contact .container{grid-template-columns:1fr;gap:40px}}
+
+  /* ───────────── Footer ───────────── */
+  footer.site{
+    border-top:1px solid var(--line);padding:48px var(--pad) 28px;
+    display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:48px;
+    max-width:var(--maxw);margin:0 auto;
+  }
+  footer.site .brand{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+  footer.site .brand img{height:42px}
+  footer.site .brand .n{font-weight:600;letter-spacing:.16em;font-size:13px;text-transform:uppercase}
+  footer.site p{color:var(--muted);font-size:14px;line-height:1.6;margin:0 0 6px}
+  footer.site h5{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin:0 0 14px;font-weight:600}
+  footer.site ul{list-style:none;padding:0;margin:0}
+  footer.site li{margin:6px 0;font-size:14px;color:#cdd2d4}
+  footer.site a{transition:color .2s ease}
+  footer.site a:hover{color:var(--accent)}
+  .legal{max-width:var(--maxw);margin:0 auto;padding:24px var(--pad) 40px;border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;color:var(--muted);font-size:12px;letter-spacing:.08em}
+  .legal a{color:var(--muted)}
+  .legal a:hover{color:var(--accent)}
+  @media (max-width:760px){footer.site{grid-template-columns:1fr;gap:32px}}
+
+  /* ───────────── FAQ (Akkordeon) ───────────── */
+  .faq{border-top:1px solid var(--line);max-width:960px}
+  .faq details{border-bottom:1px solid var(--line)}
+  .faq summary{
+    list-style:none;cursor:pointer;padding:25px 56px 25px 0;position:relative;
+    font-family:var(--display);font-weight:600;font-size:clamp(17px,1.9vw,20px);letter-spacing:-.01em;color:var(--fg);
+    transition:color .2s ease;
+  }
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary:hover,.faq details[open] summary{color:var(--accent)}
+  .faq summary::after{
+    content:"";position:absolute;right:12px;top:50%;width:13px;height:13px;color:var(--accent);
+    background:
+      linear-gradient(currentColor,currentColor) center/13px 1.7px no-repeat,
+      linear-gradient(currentColor,currentColor) center/1.7px 13px no-repeat;
+    transform:translateY(-50%);transition:transform .3s ease;
+  }
+  .faq details[open] summary::after{transform:translateY(-50%) rotate(135deg)}
+  .faq .a{padding:0 56px 26px 0;color:#bfc6c9;font-size:15.5px;line-height:1.72;max-width:780px}
+
+  /* ───────────── Kontaktformular (Modal · Milchglas) ───────────── */
+  .modal{
+    position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:24px;
+    background:rgba(6,7,9,.62);
+    -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+    opacity:0;visibility:hidden;transition:opacity .3s ease,visibility .3s ease;
+  }
+  .modal.open{opacity:1;visibility:visible}
+  .modal-card{
+    width:min(560px,100%);max-height:90vh;overflow:auto;border-radius:18px;padding:clamp(24px,4vw,38px);
+    background:linear-gradient(180deg,rgba(20,24,28,.92),rgba(12,14,18,.95));
+    border:1px solid rgba(165,231,194,.22);box-shadow:0 30px 80px rgba(0,0,0,.55);
+    transform:translateY(16px) scale(.98);transition:transform .35s cubic-bezier(.2,.7,.2,1);
+  }
+  .modal.open .modal-card{transform:none}
+  .modal-head{display:flex;align-items:center;gap:13px}
+  .modal-head img{height:38px;width:auto;border-radius:8px}
+  .modal-head .x{margin-left:auto;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--muted);font-size:19px;cursor:pointer;display:grid;place-items:center;transition:.2s;line-height:1}
+  .modal-head .x:hover{border-color:var(--accent);color:var(--fg)}
+  .modal h3{font-family:var(--display);font-weight:700;font-size:23px;letter-spacing:-.02em;margin:18px 0 6px}
+  .modal p.lead{color:var(--muted);font-size:14px;margin:0 0 22px;line-height:1.55}
+  .field{margin-bottom:15px}
+  .field label{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+  .field input,.field textarea{
+    width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:10px;
+    padding:13px 15px;color:var(--fg);font:15px/1.5 var(--display);transition:border-color .2s ease,background .2s ease;
+  }
+  .field input:focus,.field textarea:focus{outline:none;border-color:var(--accent);background:rgba(165,231,194,.06)}
+  .field textarea{resize:vertical;min-height:108px}
+  .modal .btn-primary{width:100%;justify-content:center;margin-top:6px;cursor:pointer;border:none;font:600 14px/1 var(--display)}
+  .modal .hint{text-align:center;font-size:12px;color:var(--muted);margin:14px 0 0;line-height:1.5}
+  .modal .hint a{color:var(--accent)}
+
+  /* ───────────── Reveal animations ───────────── */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity 1s ease, transform 1s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  .reveal-d1{transition-delay:.08s}
+  .reveal-d2{transition-delay:.16s}
+  .reveal-d3{transition-delay:.24s}
+  .reveal-d4{transition-delay:.32s}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<nav class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Siebel Veranstaltungstechnik — Startseite">
+    <span class="wm"><strong>SIEBEL</strong><span>Veranstaltungstechnik</span></span>
+  </a>
+  <div class="links">
+    <a href="#leistungen">Leistungen</a>
+    <a href="#arbeiten">Arbeiten</a>
+    <a href="#ablauf">Ablauf</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<header class="hero" id="top">
+  <video autoplay muted loop playsinline poster="bilder/hero.jpg">
+    <source src="video/hero.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-fallback" aria-hidden="true"></div>
+  <div class="inner">
+    <div class="eyebrow reveal">Veranstaltungstechnik · Lüdenscheid</div>
+    <h1 class="reveal reveal-d1">Ton, Licht <em>&amp;</em><br/>Atmosphäre — <em>aus einer Hand.</em></h1>
+    <p class="kicker reveal reveal-d2">
+      Wir bringen den Sound, das Licht und die Stimmung zu Ihrem Event. Vom Konzert über Firmenfeier bis Open-Air — handwerklich, zuverlässig und ohne Schnörkel.
+    </p>
+    <div class="hero-actions reveal reveal-d3">
+      <button type="button" class="btn btn-primary" data-open-form>
+        Anfrage starten
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <a class="btn btn-ghost" href="tel:+4915170532281">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        Direkt anrufen
+      </a>
+    </div>
+  </div>
+  <div class="scroll-hint reveal reveal-d4">Scroll</div>
+</header>
+
+<!-- ═══════════════ MARQUEE ═══════════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Tontechnik</span><span>Lichttechnik</span><span>Nebeltechnik</span><span>DJ-Service</span><span>Bühnenbau</span><span>Open-Air</span><span>Clubs</span><span>Firmenevents</span>
+    <span>Tontechnik</span><span>Lichttechnik</span><span>Nebeltechnik</span><span>DJ-Service</span><span>Bühnenbau</span><span>Open-Air</span><span>Clubs</span><span>Firmenevents</span>
+  </div>
+</div>
+
+<!-- ═══════════════ ABOUT ═══════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="reveal">Veranstaltungstechnik aus dem <em>Sauerland</em> — für Events, die hängen bleiben.</h2>
+      <div class="label reveal">Über uns</div>
+    </div>
+    <div class="about">
+      <div class="reveal reveal-d1">
+        <p class="lead">„Bei uns gibt's keine Pauschalpakete von der Stange. Jedes Event ist anders — und genauso planen wir auch."</p>
+        <p>Aus Lüdenscheid sind wir im gesamten Sauerland, dem Ruhrgebiet und darüber hinaus für Sie unterwegs. Vom intimen Geburtstag bis zum mehrtägigen Open-Air kümmern wir uns um die komplette Technik — Aufbau, Betrieb und Abbau inklusive.</p>
+        <p>Den Großteil der Technik haben wir selbst im Lager — und wenn ein Event mehr braucht, besorgen wir es. Heißt für Sie: Sie bekommen alles aus einer Hand, egal wie groß es wird.</p>
+        <p>Was uns wichtig ist: Sie sollen sich auf Ihre Gäste konzentrieren können. Wir machen den Rest.</p>
+      </div>
+      <div class="reveal reveal-d2">
+        <div class="about-stats">
+          <div class="stat"><div class="n">5+</div><div class="l">Jahre Erfahrung</div></div>
+          <div class="stat"><div class="n">150+</div><div class="l">Veranstaltungen</div></div>
+          <div class="stat"><div class="n">24/7</div><div class="l">am Eventtag da</div></div>
+          <div class="stat"><div class="n">A–Z</div><div class="l">alles aus einer Hand</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BILD-BREAK 01 ─── -->
+<section class="break break-1">
+  <div class="break-inner">
+    <div class="eyebrow reveal">Open-Air</div>
+    <h3 class="reveal reveal-d1">Vom Sauerland aus — dahin, wo <em>gefeiert</em> wird.</h3>
+  </div>
+</section>
+
+<!-- ═══════════════ SERVICES ═══════════════ -->
+<section id="leistungen" style="padding-top:0">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="reveal">Was wir <em>machen.</em></h2>
+      <div class="label reveal">Leistungen</div>
+    </div>
+    <div class="services">
+      <div class="service reveal"><span class="num">01</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 10v4M7 7v10M11 5v14M15 8v8M19 11v2"/></svg></div>
+        <div><h3>Tontechnik</h3><p>Top-Sound für jede Raumgröße — PA-Systeme, Mischpulte, Funkstrecken, Monitoring. Kalibriert auf Ihren Saal.</p></div>
+      </div>
+      <div class="service reveal reveal-d1"><span class="num">02</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"/></svg></div>
+        <div><h3>Lichttechnik</h3><p>Moving-Heads, LED-Bars, Architekturlicht — von dezenter Akzentbeleuchtung bis zur kompletten Lightshow.</p></div>
+      </div>
+      <div class="service reveal reveal-d2"><span class="num">03</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 16c0-2 1.5-3 3-3s3 1 3-1 1.5-3 3-3 3 1 3-1M4 20c0-2 1.5-3 3-3s3 1 3-1M14 20c0-2 1.5-3 3-3"/></svg></div>
+        <div><h3>Nebeltechnik</h3><p>Hazer, Bodennebel, CO₂-Effekte. Schafft die Atmosphäre, in der Licht erst richtig wirkt.</p></div>
+      </div>
+      <div class="service reveal reveal-d3"><span class="num">04</span>
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg></div>
+        <div><h3>DJ-Service</h3><p>Vom Hochzeits-DJ bis zum Clubset. Erfahrene DJs aus dem Sauerland — passend zu Ihrer Veranstaltung.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BILD-BREAK 02 · Anker "Arbeiten" ─── -->
+<section class="break break-2" id="arbeiten">
+  <div class="break-inner">
+    <div class="eyebrow reveal">Im Einsatz</div>
+    <h3 class="reveal reveal-d1">Gute Technik fällt nicht auf. Sie <em>wirkt</em> einfach.</h3>
+  </div>
+</section>
+
+<!-- ═══════════════ PROCESS ═══════════════ -->
+<section id="ablauf" style="background:radial-gradient(80% 120% at 100% 0%,rgba(78,107,134,.20),transparent 55%),var(--bg-soft)">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="reveal">So läuft's <em>ab.</em></h2>
+      <div class="label reveal">In 4 Schritten</div>
+    </div>
+    <div class="process">
+      <div class="step reveal"><h4>Anfrage</h4><p>Sie melden sich per Telefon oder Mail mit Datum, Ort und einem groben Bild der Veranstaltung.</p></div>
+      <div class="step reveal reveal-d1"><h4>Beratung</h4><p>Wir besprechen, was Sie wirklich brauchen — ohne Ihnen Equipment aufzuschwatzen, das niemand hört oder sieht.</p></div>
+      <div class="step reveal reveal-d2"><h4>Angebot</h4><p>Sie bekommen ein faires, transparentes Angebot. Was drinsteht, ist drin. Keine Überraschungen.</p></div>
+      <div class="step reveal reveal-d3"><h4>Umsetzung</h4><p>Aufbau, Betrieb, Abbau. Wir sind vor Ort, bis die Show läuft — und auch danach noch.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BILD-BREAK 03 ─── -->
+<section class="break break-3">
+  <div class="break-inner">
+    <div class="eyebrow reveal">Atmosphäre</div>
+    <h3 class="reveal reveal-d1">Wir bauen den Moment, an den sich <em>alle erinnern</em>.</h3>
+  </div>
+</section>
+
+<!-- ═══════════════ FAQ ═══════════════ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="reveal">Häufige <em>Fragen.</em></h2>
+      <div class="label reveal">Gut zu wissen</div>
+    </div>
+    <div class="faq">
+      <details class="reveal"><summary>Liefert ihr die Technik – oder muss ich sie abholen?</summary><div class="a">Beides ist möglich. In der Regel liefern wir die komplette Technik an, bauen sie auf und nach dem Event wieder ab – im Sauerland, im Märkischen Kreis, im Ruhrgebiet und auf Anfrage auch weiter weg. Kleinere Sets kannst du nach Absprache auch selbst am Lager in Lüdenscheid abholen.</div></details>
+      <details class="reveal"><summary>Baut ihr auch auf und ab?</summary><div class="a">Ja. Auf Wunsch übernehmen wir den kompletten Auf- und Abbau inklusive Verkabelung und Einrichtung. Du musst nichts selbst schleppen oder verstöpseln – am Eventtag steht alles fertig und eingemessen.</div></details>
+      <details class="reveal"><summary>Mit oder ohne Bedienung vor Ort?</summary><div class="a">Wie du es brauchst. Bei größeren Veranstaltungen ist ein Techniker oder DJ vor Ort und kümmert sich um Ton und Licht. Kleinere Anlagen geben wir auch mit einer verständlichen Einweisung zur Selbstbedienung raus.</div></details>
+      <details class="reveal"><summary>Wie früh sollte ich anfragen?</summary><div class="a">So früh wie möglich – gerade in der Hauptsaison (Mai bis September sowie rund um Weihnachten und Silvester) sind Termine schnell vergeben. Aber auch kurzfristig lohnt sich eine Anfrage immer: Frag einfach, wir finden meistens eine Lösung.</div></details>
+      <details class="reveal"><summary>Was kostet das Ganze?</summary><div class="a">Das hängt von Technik, Dauer, Aufwand und Anfahrt ab. Du bekommst vorab ein faires, transparentes Festpreis-Angebot – erst wenn das für dich passt, wird etwas verbindlich. Keine versteckten Kosten.</div></details>
+      <details class="reveal"><summary>Was braucht ihr vor Ort?</summary><div class="a">Im Kern: einen erreichbaren, halbwegs witterungsgeschützten Stellplatz und ausreichend Strom – von der normalen Steckdose bis zum CEE-Anschluss, je nach Anlage. Was genau gebraucht wird, klären wir vorher gemeinsam, damit am Eventtag nichts schiefgeht.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BILD-BREAK 04 ─── -->
+<section class="break break-4">
+  <div class="break-inner">
+    <div class="eyebrow reveal">Clubsound</div>
+    <h3 class="reveal reveal-d1">Vom ersten Beat bis zum <em>letzten Gast</em>.</h3>
+  </div>
+</section>
+
+<!-- ═══════════════ CONTACT ═══════════════ -->
+<section id="kontakt" class="contact">
+  <div class="container">
+    <div>
+      <img class="brand-mark reveal" src="bilder/logo.png" alt="Siebel Veranstaltungstechnik Logo" />
+      <div class="label reveal" style="font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin-bottom:24px;display:flex;align-items:center;gap:12px;">
+        <span style="width:24px;height:1px;background:var(--accent);display:block"></span>Kontakt
+      </div>
+      <h2 class="reveal reveal-d1">Schreib uns oder ruf <em>an</em>.</h2>
+      <p class="sub reveal reveal-d2">Egal ob konkrete Anfrage, lose Idee oder eine Frage zur Technik: Wir antworten schnell und direkt. Am besten vorher kurz anrufen oder mailen – ich bin viel unterwegs und nicht immer am Lager.</p>
+      <button type="button" class="btn btn-primary reveal reveal-d2" data-open-form style="margin-top:8px">
+        Anfrage senden
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+    <div class="contact-card reveal reveal-d2">
+      <div class="contact-row">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></div>
+        <div>
+          <div class="l">Telefon</div>
+          <a class="v" href="tel:+4915170532281">+49 151 7053 2281</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"/><path d="m22 6-10 7L2 6"/></svg></div>
+        <div>
+          <div class="l">E-Mail</div>
+          <a class="v" href="mailto:Siebel.veranstaltungstechnik@gmx.de">Siebel.veranstaltungstechnik@gmx.de</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div>
+          <div class="l">Firmensitz</div>
+          <a class="v" href="https://maps.apple.com/?q=Altenastra%C3%9Fe+23,+58507+L%C3%BCdenscheid" target="_blank" rel="noopener">Altenastraße 23<br/>58507 Lüdenscheid</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div>
+          <div class="l">Verfügbarkeit</div>
+          <span class="v" style="font-size:15px;line-height:1.55;color:#bfc6c9">Werktags 9–20 Uhr<br/>am Eventtag rund um die Uhr</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="site">
+  <div>
+    <div class="brand">
+      <img src="bilder/logo.png" alt="Siebel Veranstaltungstechnik" />
+      <span class="n">Siebel Veranstaltungstechnik</span>
+    </div>
+    <p>Veranstaltungstechnik aus Lüdenscheid.<br/>Ton · Licht · Nebel · DJ.</p>
+  </div>
+  <div>
+    <h5>Kontakt</h5>
+    <ul>
+      <li><a href="tel:+4915170532281">+49 151 7053 2281</a></li>
+      <li><a href="mailto:Siebel.veranstaltungstechnik@gmx.de">Siebel.veranstaltungstechnik@gmx.de</a></li>
+      <li>Altenastraße 23, 58507 Lüdenscheid</li>
+    </ul>
+  </div>
+  <div>
+    <h5>Navigation</h5>
+    <ul>
+      <li><a href="#leistungen">Leistungen</a></li>
+      <li><a href="#arbeiten">Arbeiten</a></li>
+      <li><a href="#ablauf">Ablauf</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+      <li><a href="agb.html" target="_blank" rel="noopener">AGB</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="legal">
+  <span>© <span id="year"></span> Siebel Veranstaltungstechnik · Inhaber Fabian Siebel</span>
+  <span><a href="impressum.html">Impressum</a> &nbsp;·&nbsp; <a href="agb.html" target="_blank" rel="noopener">AGB ↗</a></span>
+</div>
+
+<!-- ═══════════════ KONTAKT-FORMULAR (Modal) ═══════════════ -->
+<div class="modal" id="formModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="formTitle">
+  <div class="modal-card">
+    <div class="modal-head">
+      <img src="bilder/logo.png" alt="Siebel Veranstaltungstechnik" />
+      <button type="button" class="x" data-close-form aria-label="Schließen">✕</button>
+    </div>
+    <h3 id="formTitle">Anfrage senden</h3>
+    <p class="lead">Sag uns kurz, worum's geht – wir melden uns schnellstmöglich zurück.</p>
+    <form id="contactForm">
+      <div class="field">
+        <label for="f-name">Name</label>
+        <input type="text" id="f-name" name="name" required placeholder="Dein Name" />
+      </div>
+      <div class="field">
+        <label for="f-mail">E-Mail-Adresse</label>
+        <input type="email" id="f-mail" name="email" required placeholder="name@beispiel.de" />
+      </div>
+      <div class="field">
+        <label for="f-subject">Betreff</label>
+        <input type="text" id="f-subject" name="subject" required placeholder="z. B. Hochzeit am 12.09., Lüdenscheid" />
+      </div>
+      <div class="field">
+        <label for="f-msg">Nachricht</label>
+        <textarea id="f-msg" name="message" required placeholder="Datum, Ort, Gästezahl, was ihr braucht …"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        Absenden
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <p class="hint">Dein Mailprogramm öffnet sich mit der fertigen Nachricht – ein Klick auf „Senden" genügt.<br/>Lieber direkt? <a href="mailto:Siebel.veranstaltungstechnik@gmx.de">Siebel.veranstaltungstechnik@gmx.de</a></p>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Nav scroll state
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 30);
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Kontakt-Formular (Modal)
+  const modal = document.getElementById('formModal');
+  const openModal = () => { modal.classList.add('open'); modal.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; };
+  const closeModal = () => { modal.classList.remove('open'); modal.setAttribute('aria-hidden','true'); document.body.style.overflow=''; };
+  document.querySelectorAll('[data-open-form]').forEach(b => b.addEventListener('click', openModal));
+  document.querySelectorAll('[data-close-form]').forEach(b => b.addEventListener('click', closeModal));
+  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
+
+  document.getElementById('contactForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const f = e.target;
+    const name = f.name.value.trim();
+    const email = f.email.value.trim();
+    const subject = f.subject.value.trim();
+    const message = f.message.value.trim();
+    const body =
+      'Name: ' + name + '\n' +
+      'E-Mail: ' + email + '\n\n' +
+      message + '\n\n' +
+      '— gesendet über siebel-veranstaltungstechnik.de';
+    const href = 'mailto:Siebel.veranstaltungstechnik@gmx.de'
+      + '?subject=' + encodeURIComponent('Anfrage: ' + subject)
+      + '&body=' + encodeURIComponent(body);
+    window.location.href = href;
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, {threshold:.12, rootMargin:"0px 0px -40px 0px"});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
